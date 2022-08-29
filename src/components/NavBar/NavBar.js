@@ -1,12 +1,17 @@
 import logo from '../../logo.svg'
+// import CartWidget from './components/CartWidget/CartWidget';
 import './styles.css'
+import { BiCart } from 'react-icons/bi'
+
 
 const NavBar= () => {
     return(
         <div className='navbar-container'>
+
             <div>
                 <img width={'100px'} src={logo} alt="logo"/> 
             </div>
+
             <div>
                 <ul>
                     <li>
@@ -17,8 +22,13 @@ const NavBar= () => {
                     </li>
                     <li>
                         <a href="#">About</a>
-                    </li>
+                    </li>   
                 </ul>
+            </div>
+            
+
+            <div>
+                <h3><BiCart /></h3>
             </div>
 
         

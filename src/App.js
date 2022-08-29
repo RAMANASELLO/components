@@ -1,13 +1,18 @@
 import logo from './/logo.svg';
 import './App.css';
+import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar/NavBar';
-import CartWidget from './components/CartWidget/CartWidget';
+// import { AiOutlineShoppingCart } from 'react-icons/fa';
+
+
 function App() {
   return (
     <div className="App">
       <NavBar/>
-      <CartWidget/>
+      {/* <AiOutlineShoppingCart/> */}
       <header className="App-header">
+        <ItemListContainer titulo="Tienda de F1"/>
+      
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
